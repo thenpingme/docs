@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Getting Started",
+    "pages": ["introduction", "installation", "configuration", "artisan-commands"]
+  },
+  {
+    "title": "thenping.me",
+    "pages": ["projects", "tasks", "executions", "alerts"]
+  },
+  {
+    "pages": [
+      {
+        "name": "FAQ",
+        "file": "faq"
+      }
+    ]
+  }
+]
