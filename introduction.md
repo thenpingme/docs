@@ -1,5 +1,6 @@
-# Introduction
-
+---
+title: Introduction
+---
 thenping.me is a monitoring solution built specifically for your Laravel application's scheduled tasks.
 
 Whilst error tracking is great at telling you when something broke, monitoring helps you keep an eye on your applications scheduled tasks to ensure they run when you expect them.

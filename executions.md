@@ -1,5 +1,6 @@
-# Executions
-
+---
+title: Executions
+---
 Executions track a single run of your monitored tasks.
 
 Each time your application's task scheduler kicks off a task, a new execution record will be created.

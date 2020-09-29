@@ -1,5 +1,6 @@
-# Configuration
-
+---
+title: Configuration
+---
 thenping.me aims to be a zero-configuration tool for monitoring your application's scheduled tasks, however, does allow you to configure certain aspects using environment variables.
 
 ## Environment variables

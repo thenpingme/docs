@@ -1,5 +1,6 @@
-# Artisan Commands
-
+---
+title: Artisan Commands
+---
 Once installed, the [`thenpingme/laravel`](https://github.com/thenpingme/thenpingme-laravel) package provides four Artisan commands to your application.
 
 ## `thenpingme:setup`
@@ -18,7 +19,7 @@ Once setup is complete, you will receive an email to verify that your applicatio
 
 As the name suggests, the `sync` command is responsible for ensuring that your application tasks are kept in sync with thenping.me.
 
-<div class="rounded shadow bg-indigo-50 px-4 py-1">
+<div class="px-4 py-1 rounded shadow bg-indigo-50">
     <p class="text-indigo-700">You should include this command as part of your deployment process, to ensure your tasks and their schedules are correctly monitored.</p>
 </div>
 

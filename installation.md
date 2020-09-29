@@ -1,5 +1,6 @@
-# Installation
-
+---
+title: Installation
+---
 ## Requirements
 
 * Laravel 6.0 or higher

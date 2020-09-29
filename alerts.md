@@ -1,5 +1,6 @@
-# Alerts
-
+---
+title: Alerts
+---
 Alerts are a large part of why thenping.me exists; to communicate with you about when your application's scheduled tasks reached a state of alert.
 
 There are two situations that will lead to an alert being raised:

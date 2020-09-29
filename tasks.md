@@ -1,5 +1,6 @@
-# Tasks
-
+---
+title: Tasks
+---
 Tasks are a one-to-one mapping of the scheduled tasks configured in your application.
 
 For each task, we will track the

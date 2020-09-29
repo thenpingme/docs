@@ -1,5 +1,6 @@
-# Projects
-
+---
+title: Projects
+---
 In the context of thenping.me, projects are synonymous with applications. Each application whose tasks need monitoring will require creating a new project.
 
 Your thenping.me dashboard provides you with an overview of the health of all of your monitored projects.

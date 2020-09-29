@@ -1,5 +1,6 @@
-# Frequently Asked Questions
-
+---
+title: FAQ
+---
 ## What is the difference between error tracking and task monitoring?
 An error tracker - such as [Flare](https://flareapp.io), [Sentry](https://sentry.io), or [Bugsnag](https://www.bugsnag.com) - is the perfect tool to tell you when your application throws an exception, a database goes away, or a connection to a mail server times out.
 
