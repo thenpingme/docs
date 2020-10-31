@@ -3,7 +3,7 @@ title: Terms and Conditions
 ---
 Last Updated: October 24, 2020
 
-These Terms and Conditions ("Terms", "Terms and Conditions") govern your relationship with [https://thenping.me](https://thenping.me) website (the "Service") operated by ThenPingMe ("us", "we", or "our").
+These Terms and Conditions ("Terms", "Terms and Conditions") govern your relationship with [https://thenping.me](https://thenping.me) website (the "Service") operated by thenping.me ("us", "we", or "our").
 
 Please read these Terms and Conditions carefully before using the Service.
 
