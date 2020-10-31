@@ -14,5 +14,12 @@
         "file": "faq"
       }
     ]
+  },
+  {
+    "title": "Legal",
+    "pages": [
+      "privacy",
+      "terms"
+    ]
   }
 ]
