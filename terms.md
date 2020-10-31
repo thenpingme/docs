@@ -3,7 +3,7 @@ title: Terms and Conditions
 ---
 Last Updated: October 24, 2020
 
-These Terms and Conditions ("Terms", "Terms and Conditions") govern your relationship with https://thenping.me website (the "Service") operated by ThenPingMe ("us", "we", or "our").
+These Terms and Conditions ("Terms", "Terms and Conditions") govern your relationship with [https://thenping.me](https://thenping.me) website (the "Service") operated by ThenPingMe ("us", "we", or "our").
 
 Please read these Terms and Conditions carefully before using the Service.
 
@@ -14,30 +14,30 @@ By accessing or using the Service you agree to be bound by these Terms. If you d
 ## Subscriptions
 Some parts of the Service are billed on a subscription basis ("Subscription(s)"). You will be billed in advance on a recurring and periodic basis ("Billing Cycle"). Billing cycles are set either on a monthly or annual basis, depending on the type of subscription plan you select when purchasing a Subscription.
 
-At the end of each Billing Cycle, your Subscription will automatically renew under the exact same conditions unless you cancel it or ThenPing.me cancels it. You may cancel your Subscription renewal either through your online account management page or by contacting ThenPing.me customer support team.
+At the end of each Billing Cycle, your Subscription will automatically renew under the exact same conditions unless you cancel it or thenping.me cancels it. You may cancel your Subscription renewal either through your online account management page or by contacting thenping.me customer support team.
 
-A valid payment method, including credit card, is required to process the payment for your Subscription. You shall provide ThenPing.me with accurate and complete billing information including full name, address, state, zip code, telephone number, and a valid payment method information. By submitting such payment information, you automatically authorize ThenPing.me to charge all Subscription fees incurred through your account to any such payment instruments.
+A valid payment method, including credit card, is required to process the payment for your Subscription. You shall provide thenping.me with accurate and complete billing information including full name, address, state, zip code, telephone number, and a valid payment method information. By submitting such payment information, you automatically authorize thenping.me to charge all Subscription fees incurred through your account to any such payment instruments.
 
-Should automatic billing fail to occur for any reason, ThenPing.me will issue an electronic invoice indicating that you must proceed manually, within a certain deadline date, with the full payment corresponding to the billing period as indicated on the invoice.
+Should automatic billing fail to occur for any reason, thenping.me will issue an electronic invoice indicating that you must proceed manually, within a certain deadline date, with the full payment corresponding to the billing period as indicated on the invoice.
 
 ## Free Trial
-ThenPing.me may, at its sole discretion, offer a Subscription with a free trial for a limited period of time ("Free Trial").
+thenping.me may, at its sole discretion, offer a Subscription with a free trial for a limited period of time ("Free Trial").
 
 You may be required to enter your billing information in order to sign up for the Free Trial.
 
-If you do enter your billing information when signing up for the Free Trial, you will not be charged by ThenPing.me until the Free Trial has expired. On the last day of the Free Trial period, unless you cancelled your Subscription, you will be automatically charged the applicable Subscription fees for the type of Subscription you have selected.
+If you do enter your billing information when signing up for the Free Trial, you will not be charged by thenping.me until the Free Trial has expired. On the last day of the Free Trial period, unless you cancelled your Subscription, you will be automatically charged the applicable Subscription fees for the type of Subscription you have selected.
 
-At any time and without notice, ThenPing.me reserves the right to (i) modify the terms and conditions of the Free Trial offer, or (ii) cancel such Free Trial offer.
+At any time and without notice, thenping.me reserves the right to (i) modify the terms and conditions of the Free Trial offer, or (ii) cancel such Free Trial offer.
 
 ## Fee Changes
-ThenPing.me, in its sole discretion and at any time, may modify the Subscription fees for the Subscriptions. Any Subscription fee change will become effective at the end of the then-current Billing Cycle.
+thenping.me, in its sole discretion and at any time, may modify the Subscription fees for the Subscriptions. Any Subscription fee change will become effective at the end of the then-current Billing Cycle.
 
-ThenPing.me will provide you with a reasonable prior notice of any change in Subscription fees to give you an opportunity to terminate your Subscription before such change becomes effective.
+thenping.me will provide you with a reasonable prior notice of any change in Subscription fees to give you an opportunity to terminate your Subscription before such change becomes effective.
 
 Your continued use of the Service after the Subscription fee change comes into effect constitutes your agreement to pay the modified Subscription fee amount.
 
 ## Refunds
-Certain refund requests for Subscriptions may be considered by ThenPing.me on a case-by-case basis and granted in sole discretion of ThenPing.me.
+Certain refund requests for Subscriptions may be considered by thenping.me on a case-by-case basis and granted in sole discretion of thenping.me.
 
 ## Accounts
 When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.
@@ -47,12 +47,12 @@ You are responsible for safeguarding the password that you use to access the Ser
 You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.
 
 ## Intellectual Property
-The Service and its original content, features and functionality are and will remain the exclusive property of ThenPing.me and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of ThenPing.me.
+The Service and its original content, features and functionality are and will remain the exclusive property of thenping.me and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of thenping.me.
 
 ## Links To Other Web Sites
-Our Service may contain links to third-party web sites or services that are not owned or controlled by ThenPing.me.
+Our Service may contain links to third-party web sites or services that are not owned or controlled by thenping.me.
 
-ThenPing.me has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that ThenPing.me shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
+thenping.me has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that thenping.me shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
 
 We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.
 
@@ -62,12 +62,12 @@ We may terminate or suspend your account immediately, without prior notice or li
 Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.
 
 ## Limitation Of Liability
-In no event shall ThenPing.me, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
+In no event shall thenping.me, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
 
 ## Disclaimer
 Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
 
-ThenPing.me its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.
+thenping.me its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.
 
 ## Governing Law
 These Terms shall be governed and construed in accordance with the laws of Texas, United States, without regard to its conflict of law provisions.

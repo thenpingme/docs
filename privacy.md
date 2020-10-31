@@ -3,7 +3,7 @@ title: Privacy
 ---
 Effective date: October 24, 2020
 
-ThenPing.me ("us", "we", or "our") operates the https://thenping.me website (hereinafter referred to as the "Service").
+thenping.me ("us", "we", or "our") operates the [https://thenping.me](https://thenping.me) website (hereinafter referred to as the "Service").
 
 This page informs you of our policies regarding the collection, use and disclosure of personal data when you use our Service and the choices you have associated with that data.
 
@@ -13,7 +13,7 @@ We use your data to provide and improve the Service. By using the Service, you a
 
 -   Service
 
-    Service is the https://thenping.me website operated by ThenPing.me
+    Service is the [https://thenping.me](https://thenping.me) website operated by thenping.me
 
 -   Personal Data
 
@@ -79,7 +79,7 @@ Examples of Cookies we use:
 
 ## Use of Data
 
-ThenPing.me uses the collected data for various purposes:
+thenping.me uses the collected data for various purposes:
 
 -   To provide and maintain our Service
 -   To notify you about changes to our Service
@@ -92,9 +92,9 @@ ThenPing.me uses the collected data for various purposes:
 
 ## Legal Basis for Processing Personal Data under the General Data Protection Regulation (GDPR)
 
-If you are from the European Economic Area (EEA), ThenPing.me legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Data we collect and the specific context in which we collect it.
+If you are from the European Economic Area (EEA), thenping.me legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Data we collect and the specific context in which we collect it.
 
-ThenPing.me may process your Personal Data because:
+thenping.me may process your Personal Data because:
 
 -   We need to perform a contract with you
 -   You have given us permission to do so
@@ -104,9 +104,9 @@ ThenPing.me may process your Personal Data because:
 
 ## Retention of Data
 
-ThenPing.me will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes and enforce our legal agreements and policies.
+thenping.me will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes and enforce our legal agreements and policies.
 
-ThenPing.me will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer periods.
+thenping.me will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer periods.
 
 ## Transfer of Data
 
@@ -116,24 +116,24 @@ If you are located outside United States and choose to provide information to us
 
 Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
 
-ThenPing.me will take all the steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organisation or a country unless there are adequate controls in place including the security of your data and other personal information.
+thenping.me will take all the steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organisation or a country unless there are adequate controls in place including the security of your data and other personal information.
 
 ## Disclosure of Data
 
 ### BUSINESS TRANSACTION
 
-If ThenPing.me is involved in a merger, acquisition or asset sale, your Personal Data may be transferred. We will provide notice before your Personal Data is transferred and becomes subject to a different Privacy Policy.
+If thenping.me is involved in a merger, acquisition or asset sale, your Personal Data may be transferred. We will provide notice before your Personal Data is transferred and becomes subject to a different Privacy Policy.
 
 ### DISCLOSURE FOR LAW ENFORCEMENT
 
-Under certain circumstances, ThenPing.me may be required to disclose your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
+Under certain circumstances, thenping.me may be required to disclose your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
 
 ### LEGAL REQUIREMENTS
 
-ThenPing.me may disclose your Personal Data in the good faith belief that such action is necessary to:
+thenping.me may disclose your Personal Data in the good faith belief that such action is necessary to:
 
 -   To comply with a legal obligation
--   To protect and defend the rights or property of ThenPing.me
+-   To protect and defend the rights or property of thenping.me
 -   To prevent or investigate possible wrongdoing in connection with the Service
 -   To protect the personal safety of users of the Service or the public
 -   To protect against legal liability
@@ -144,7 +144,7 @@ The security of your data is important to us but remember that no method of tran
 
 ## Your Data Protection Rights under the General Data Protection Regulation (GDPR)
 
-If you are a resident of the European Economic Area (EEA), you have certain data protection rights. ThenPing.me aims to take reasonable steps to allow you to correct, amend, delete or limit the use of your Personal Data.
+If you are a resident of the European Economic Area (EEA), you have certain data protection rights. thenping.me aims to take reasonable steps to allow you to correct, amend, delete or limit the use of your Personal Data.
 
 If you wish to be informed about what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.
 
@@ -160,7 +160,7 @@ In certain circumstances, you have the following data protection rights:
 
 -   The right to data portability. You have the right to be provided with a copy of the information we have on you in a structured, machine-readable and commonly used format.
 
--   The right to withdraw consent. You also have the right to withdraw your consent at any time where ThenPing.me relied on your consent to process your personal information.
+-   The right to withdraw consent. You also have the right to withdraw your consent at any time where thenping.me relied on your consent to process your personal information.
 
 Please note that we may ask you to verify your identity before responding to such requests.
 
@@ -176,13 +176,11 @@ These third parties have access to your Personal Data only to perform these task
 
 We may use third-party Service Providers to monitor and analyse the use of our Service.
 
--   Google Analytics
+-   Fathom Analytics
 
-    Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualise and personalise the ads of its own advertising network.
+    Fathom Analytics is a privacy-first web analytics service offered by Conva Ventures Inc. that tracks and reports website traffic. Fathom uses the data collected to track and monitor the use of our Service.
 
-    You can opt-out of having made your activity on the Service available to Google Analytics by installing the Google Analytics opt-out browser add-on. The add-on prevents the Google Analytics JavaScript (ga.js, analytics.js and dc.js) from sharing information with Google Analytics about visits activity.
-
-    For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: <https://policies.google.com/privacy?hl=en>
+    For more information on the privacy practices of Fathom, please visit the Fathom [Privacy](https://usefathom.com/privacy) & [Terms](https://usefathom.com/terms) web pages.
 
 #### PAYMENTS
 
@@ -220,4 +218,4 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 If you have any questions about this Privacy Policy, please contact us:
 
--   By email: support@thenping.me
+-   By email: <a href="mailto:support@thenping.me">support@thenping.me</a>
