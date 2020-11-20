@@ -8,6 +8,10 @@ Any of the above situations will be handled in your error tracking service and w
 
 They certainly won't communicate that you forgot to add `schedule:run` to your latest project's crontab or give you any indication that a task is taking too long to finish.
 
+Check out the presentation by [Michael](https://twitter.com/michaeldyrynda) from the [Laravel Worldwide Meetup](https://meetup.laravel.com) to learn more.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tAuoLLUcbsE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## How much do you know about my app?
 We capture a lot of telemetry from your application's scheduled tasks but capture nothing about the contents of the jobs or commands themselves. We will not inspect your jobs, what they're doing, or what they're operating on. It's not important to us what you're tasks are accomplishing, just that they are running on schedule or running at all.
 
