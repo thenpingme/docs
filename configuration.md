@@ -21,6 +21,14 @@ Ensure that this is set in your environment wherever you run the `thenpingme:syn
 
 By default, the package will dispatch all pings to the queue for asyncrhonous processing. If you would prefer the tasks be dispatched immediately, you may set this value to `false`.
 
+### `THENPINGME_QUEUE_CONNECTION`
+
+If you wish to send your ping jobs on a specific queue connection, you may specify a value from your queue configuration here. By default, we will use `config('queue.default')`.
+
+### `THENPINGME_QUEUE_NAME`
+
+If you want to specify a different queue to send your ping jobs to for processing, you may specify a value from your queue configuration here. By default, we will use the queue name from your configured queue connection.
+
 > The job will be dispatched on the `default` queue, so ensure you have a queue worker for this queue running.
 
 ### `THENPINGME_API_URL`
