@@ -121,52 +121,64 @@ For each task, there are a series of icons that identify different components of
 
 A task can exist in one of six states:
 
-<div class="flex flex-wrap space-y-2 md:space-y-3">
-    <div class="flex w-full">
-        <div class="w-1/6">
-            <span class="inline-flex px-2 text-xs font-semibold text-gray-800 bg-gray-100 rounded-full leading-5">Pending</span>
+<div class="w-full overflow-hidden bg-white rounded-md shadow-md divide-y">
+    <div class="flex w-full p-4">
+        <div class="w-16 sm:w-20 flex justify-center">
+            <div>
+                <span class="inline-flex px-2 text-xs font-semibold text-gray-800 bg-gray-100 rounded-full leading-5">Pending</span>
+            </div>
         </div>
-        <div class="w-5/6">
+        <div class="ml-2 w-5/6">
             We are waiting for your task to ping for the first time.
         </div>
     </div>
-    <div class="flex w-full pt-2 border-t border-gray-300 md:pt-3">
-        <div class="w-1/6">
-            <span class="inline-flex px-2 text-xs font-semibold text-blue-800 bg-blue-100 rounded-full leading-5">Running</span>
+    <div class="flex w-full p-4">
+        <div class="w-16 sm:w-20 flex justify-center">
+            <div>
+                <span class="inline-flex px-2 text-xs font-semibold text-blue-800 bg-blue-100 rounded-full leading-5">Running</span>
+            </div>
         </div>
-        <div class="w-5/6">
+        <div class="ml-2 w-5/6">
             We have received a start ping, indicating that your task is currently running.
         </div>
     </div>
-    <div class="flex w-full pt-2 border-t border-gray-300 md:pt-3">
-        <div class="w-1/6">
-            <span class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full leading-5">Passing</span>
+    <div class="flex w-full p-4">
+        <div class="w-16 sm:w-20 flex justify-center">
+            <div>
+                <span class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full leading-5">Passing</span>
+            </div>
         </div>
-        <div class="w-5/6">
+        <div class="ml-2 w-5/6">
             Your task is currently running on schedule.
         </div>
     </div>
-    <div class="flex w-full pt-2 border-t border-gray-300 md:pt-3">
-        <div class="w-1/6">
-            <span class="inline-flex px-2 text-xs font-semibold text-red-800 bg-red-100 rounded-full leading-5">Missing</span>
+    <div class="flex w-full p-4">
+        <div class="w-16 sm:w-20 flex justify-center">
+            <div>
+                <span class="inline-flex px-2 text-xs font-semibold text-red-800 bg-red-100 rounded-full leading-5">Missing</span>
+            </div>
         </div>
-        <div class="w-5/6">
+        <div class="ml-2 w-5/6">
             Your task was expected to send a start ping, but it has not been received within the allowed grace period.
         </div>
     </div>
-    <div class="flex w-full pt-2 border-t border-gray-300 md:pt-3">
-        <div class="w-1/6">
-            <span class="inline-flex px-2 text-xs font-semibold text-red-800 bg-red-100 rounded-full leading-5">Failed</span>
+    <div class="flex w-full p-4">
+        <div class="w-16 sm:w-20 flex justify-center">
+            <div>
+                <span class="inline-flex px-2 text-xs font-semibold text-red-800 bg-red-100 rounded-full leading-5">Failed</span>
+            </div>
         </div>
-        <div class="w-5/6">
+        <div class="ml-2 w-5/6">
             We received a start ping on schedule, however, your task threw an exception and reported that it had failed.
         </div>
     </div>
-    <div class="flex w-full pt-2 border-t border-gray-300 md:pt-3">
-        <div class="w-1/6">
-            <span class="inline-flex px-2 text-xs font-semibold text-orange-800 bg-orange-100 rounded-full leading-5">Failing</span>
+    <div class="flex w-full p-4">
+        <div class="w-16 sm:w-20 flex justify-center">
+            <div>
+                <span class="inline-flex px-2 text-xs font-semibold text-orange-800 bg-orange-100 rounded-full leading-5">Failing</span>
+            </div>
         </div>
-        <div class="w-5/6">
+        <div class="ml-2 w-5/6">
             We received a start ping on schedule, however, your task has not sent the finish ping within the runtime allowance.
         </div>
     </div>
