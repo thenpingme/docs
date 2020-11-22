@@ -27,6 +27,8 @@ In order for all relevant tasks to be monitored, this command should be run in t
 
 That is to say, if you have tasks constrained to only run in production environments &ndash; `environments(['production'])` &ndash; you should run `thenpingme:sync` *in* the production environment.
 
+**Note**: This command will always run in sync, so you receive immediate feedback if your tasks fail to sync for any reason.
+
 ## `thenpingme:schedule`
 
 The `schedule` command is useful to get a quick overview of all of your application's scheduled tasks, their interval, expected previous and next runs.
