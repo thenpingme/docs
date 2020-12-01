@@ -16,6 +16,12 @@ The first step is installing the `thenpingme/laravel` package into the applicati
 composer require thenpingme/laravel
 ```
 
+> Please note, if you are using Laravel 6.x you will need to use version 1.x of the package
+
+```
+composer require thenpingme/laravel:^1.0
+```
+
 The second command is unique to your project, and is responsible for identifying your scheduled tasks and configuring your application to communicate with thenping.me.
 
 ```
