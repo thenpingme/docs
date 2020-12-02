@@ -70,6 +70,10 @@ Make sure that the [`thenpingme:sync`](/docs/artisan-commands#thenpingmesync) co
 
 The sync command is responsible for making sure that we are monitoring tasks consistent with how they are configured in your `app/Console/Kernel.php` file.
 
+If you have scheduled tasks to only run in specific environments i.e. `$schedule->command('report:tps')->daily()->environments('production')`, it is important that you run the `thenpingme:sync` command _in_ your `production` environment as part of your deployment process.
+
+Tasks that are configured for `production` won't be sent to thenping.me if you run `thenpingme:sync` in your `local` or `ci` environments.
+
 ## I changed the schedule for my task and lost all the history. What do I do?
 Monitoring changes to task schedules is difficult because they are configured in code. We can't be sure if you've changed the task's schedule or added the same task on a different schedule.
 
