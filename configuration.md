@@ -5,6 +5,12 @@ thenping.me aims to be a zero-configuration tool for monitoring your application
 
 ## Environment variables
 
+### `THENPINGME_ENABLED`
+
+If you need to disable sending pings, for example staging or development environments, you may set this value to `false` in your environment to prevent pings being dispatched. 
+
+Note that we will still expect your application to ping at configured intervals, so ensure you have at least one active environment sending pings to avoid false-positive alerts. 
+
 ### `THENPINGME_PROJECT_ID`
 
 Identifies your application to thenping.me when it sends its ping payloads. This is automatically set when you run the [`thenpingme:setup`](/docs/installation) command for the first time.
