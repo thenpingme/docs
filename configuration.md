@@ -54,3 +54,62 @@ php artisan vendor:publish --tag=thenpingme-config
 This will publish the configuration to `config/thenpingme.php`.
 
 The most common configuration you will make in this file will be setting of the `release` value, if you would like to track your application release/version along with your pings.
+
+
+## Task configuration
+
+As of version [3.0.0](https://github.com/thenpingme/thenpingme-laravel/releases/tag/3.0.0) of the client package, task settings can be made configured on a per-task basis directly within your scheduled task.
+
+This allows you to have control of how your tasks are monitored right alongside where you define the task schedule.
+
+```php
+// app/Console/Kernel.php
+
+protected function schedule(Schedule $schedule)
+{
+    $schedule
+        ->command(CheckForMissingTasks::class)
+        ->everyMinute()
+        ->thenpingme(
+            grace_period: 2,     // In minutes
+            allowed_run_time: 1, // In minutes
+            notify_after_consecutive_alerts: 2,
+        );
+}
+```
+
+Relatedly, from version [3.1.0](https://github.com/thenpingme/thenpingme-laravel/releases/tag/3.1.0) of the client package, you may configure project-wide setting defaults.
+
+These values, when set, will be the default for all tasks in your project and take precedence over the default values used by thenping.me. Any tasks-specific settings will override the project defaults.
+
+```php
+// config/thenpingme.php
+return [
+    'settings' => [
+        // How much time, in minutes, should be allowed to pass before a task is considered late
+        'grace_period' => env('THENPINGME_SETTING_GRACE_PERIOD', 1),
+
+        // How much time, in minutes, should a task be allowed to run before it is considered timed out
+        'allowed_run_time' => env('THENPINGME_SETTING_ALLOWED_RUN_TIME', 1),
+
+        // How many consecutive alerts should occur before you wish to be notified
+        'notify_after_consecutive_alerts' => env('THENPINGME_SETTING_NOTIFY_AFTER_CONSECUTIVE_ALERTS', 1),
+    ],
+]
+```
+
+In addition (from ^3.1), if there are any tasks you do not wish to monitor at all, you may use the `skip` configuration option. When skipped, the task will not be sent as part of the `thenpingme:setup` or `thenpingme:sync` commands, nor will it appear in the `thenpingme:schedule` or `thenpingme:verify` output.
+
+```php
+// app/Console/Kernel.php
+
+protected function schedule(Schedule $schedule)
+{
+    $schedule
+        ->command(SomeCommandThatShouldNotBeMonitored::class)
+        ->hourly()
+        ->thenpingme(
+            skip: true
+        );
+}
+```
