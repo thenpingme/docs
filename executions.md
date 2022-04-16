@@ -18,53 +18,45 @@ Tasks that are scheduled in your `app/Console/Kernel.php` using `when()` or `unl
 An execution can exist in one of five statuses:
 
 <div class="w-full overflow-hidden bg-white rounded-md shadow-md divide-y">
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex-justify-center">
+    <div class="grid grid-cols-6 gap-4 p-3">
+        <div class="col-span-1 flex items-start">
             <div>
                 <span class="inline-flex px-2 text-xs font-semibold text-blue-800 bg-blue-100 rounded-full leading-5">Running</span>
             </div>
         </div>
-        <div class="ml-2 w-5/6">
+        <div class="col-span-5">
             We have received a start ping, indicating that the execution is currently in progress.
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex-justify-center">
+        <div class="col-span-1 flex items-start">
             <div>
                 <span class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full leading-5">Finished</span>
             </div>
         </div>
-        <div class="ml-2 w-5/6">
+        <div class="col-span-5">
             We received a finish ping, indicating that the execution completed without failure.
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex-justify-center">
+        <div class="col-span-1 flex items-start">
             <div>
                 <span class="inline-flex px-2 text-xs font-semibold text-purple-800 bg-purple-100 rounded-full leading-5">Skipped</span>
             </div>
         </div>
-        <div class="ml-2 w-5/6">
+        <div class="col-span-5">
             We received a skipped ping, indicating that your task was evaluated for execution but did not run based on the result of a truth test constraint in your scheduler.
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex-justify-center">
+        <div class="col-span-1 flex items-start">
             <div>
                 <span class="inline-flex px-2 text-xs font-semibold text-red-800 bg-red-100 rounded-full leading-5">Timedout</span>
             </div>
         </div>
-        <div class="ml-2 w-5/6">
+        <div class="col-span-5">
             A finish ping was either not received, or the finish ping was not received within the allowed runtime. Note that an execution that reached the timedout status is not final. For a long-running task, the finish ping may arrive later.
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex-justify-center">
+        <div class="col-span-1 flex items-start">
             <div>
                 <span class="inline-flex px-2 text-xs font-semibold text-red-800 bg-red-100 rounded-full leading-5">Failed</span>
             </div>
         </div>
-        <div class="ml-2 w-5/6">
+        <div class="col-span-5">
             An exception was thrown during execution of your task.
         </div>
     </div>

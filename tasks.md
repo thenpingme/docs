@@ -59,58 +59,50 @@ For example, if you were to configure a consecutive failure threshold of 3, we w
 For each task, there are a series of icons that identify different components of its configuration.
 
 <div class="w-full overflow-hidden bg-white rounded-md shadow-md divide-y">
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex justify-center">
+    <div class="grid grid-cols-6 gap-4 p-3">
+        <div class="col-span-1 flex items-start justify-center mt-1">
             <svg class="w-6 h-6 text-indigo-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9z"></path>
                 <path d="M5 3a2 2 0 00-2 2v6a2 2 0 002 2V5h8a2 2 0 00-2-2H5z"></path>
             </svg>
         </div>
-        <div class="ml-2 w-5/6 flex flex-col">
+        <div class="col-span-5 flex flex-col">
             <span class="font-medium">May overlap</span>
             <span class="text-gray-600 text-sm">Should this task run longer than it's configured interval, it is possible that it can be running multiple times simultaneously.</span>
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex justify-center">
+        <div class="col-span-1 flex items-start justify-center mt-1">
             <svg class="w-6 h-6 text-indigo-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M9 3a1 1 0 012 0v5.5a.5.5 0 001 0V4a1 1 0 112 0v4.5a.5.5 0 001 0V6a1 1 0 112 0v5a7 7 0 11-14 0V9a1 1 0 012 0v2.5a.5.5 0 001 0V4a1 1 0 012 0v4.5a.5.5 0 001 0V3z" clip-rule="evenodd"></path>
             </svg>
         </div>
-        <div class="ml-2 w-5/6 flex flex-col">
+        <div class="col-span-5 flex flex-col">
             <span class="font-medium">Not in maintenance mode</span>
             <span class="text-gray-600 text-sm">This task will not run if you have run <code>artisan down</code> in your application.</span>
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex justify-center">
+        <div class="col-span-1 flex items-start justify-center mt-1">
             <svg class="w-6 h-6 text-indigo-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"></path>
             </svg>
         </div>
-        <div class="ml-2 w-5/6 flex flex-col">
+        <div class="col-span-5 flex flex-col">
             <span class="font-medium">On one server</span>
             <span class="text-gray-600 text-sm">This task has been configured to run on one server only.</span>
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex justify-center">
+        <div class="col-span-1 flex items-start justify-center mt-1">
             <svg class="w-6 h-6 text-indigo-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path>
             </svg>
         </div>
-        <div class="ml-2 w-5/6 flex flex-col">
+        <div class="col-span-5 flex flex-col">
             <span class="font-medium">Runs in background</span>
             <span class="text-gray-600 text-sm">This task has been configured to run in the background, so it will not delay the start of other tasks on the same execution schedule.</span>
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex justify-center">
+        <div class="col-span-1 flex items-start justify-center mt-1">
             <svg class="w-6 h-6 text-indigo-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z" clip-rule="evenodd"></path>
             </svg>
         </div>
-        <div class="ml-2 w-5/6 flex flex-col">
+        <div class="col-span-5 flex flex-col">
             <span class="font-medium">Task is filtered</span>
             <span class="text-gray-600 text-sm">This task may be skipped, subject to the result of a <a href="https://laravel.com/docs/8.x/scheduling#truth-test-constraints" target="_blank">truth-test constraint</a> at runtime.</span>
         </div>
@@ -122,63 +114,41 @@ For each task, there are a series of icons that identify different components of
 A task can exist in one of six states:
 
 <div class="w-full overflow-hidden bg-white rounded-md shadow-md divide-y">
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex justify-center">
-            <div>
-                <span class="inline-flex px-2 text-xs font-semibold text-gray-800 bg-gray-100 rounded-full leading-5">Pending</span>
-            </div>
+    <div class="grid grid-cols-6 gap-4 p-3">
+        <div class="col-span-1 flex items-start mt-1">
+            <span class="inline-flex px-2 text-xs font-semibold text-gray-800 bg-gray-100 rounded-full leading-5">Pending</span>
         </div>
-        <div class="ml-2 w-5/6">
+        <div class="col-span-5">
             We are waiting for your task to ping for the first time.
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex justify-center">
-            <div>
-                <span class="inline-flex px-2 text-xs font-semibold text-blue-800 bg-blue-100 rounded-full leading-5">Running</span>
-            </div>
+        <div class="col-span-1 flex items-start mt-1">
+            <span class="inline-flex px-2 text-xs font-semibold text-blue-800 bg-blue-100 rounded-full leading-5">Running</span>
         </div>
-        <div class="ml-2 w-5/6">
+        <div class="col-span-5">
             We have received a start ping, indicating that your task is currently running.
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex justify-center">
-            <div>
-                <span class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full leading-5">Passing</span>
-            </div>
+        <div class="col-span-1 flex items-start mt-1">
+            <span class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full leading-5">Passing</span>
         </div>
-        <div class="ml-2 w-5/6">
+        <div class="col-span-5">
             Your task is currently running on schedule.
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex justify-center">
-            <div>
-                <span class="inline-flex px-2 text-xs font-semibold text-red-800 bg-red-100 rounded-full leading-5">Missing</span>
-            </div>
+        <div class="col-span-1 flex items-start mt-1">
+            <span class="inline-flex px-2 text-xs font-semibold text-red-800 bg-red-100 rounded-full leading-5">Missing</span>
         </div>
-        <div class="ml-2 w-5/6">
+        <div class="col-span-5">
             Your task was expected to send a start ping, but it has not been received within the allowed grace period.
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex justify-center">
-            <div>
-                <span class="inline-flex px-2 text-xs font-semibold text-red-800 bg-red-100 rounded-full leading-5">Failed</span>
-            </div>
+        <div class="col-span-1 flex items-start mt-1">
+            <span class="inline-flex px-2 text-xs font-semibold text-red-800 bg-red-100 rounded-full leading-5">Failed</span>
         </div>
-        <div class="ml-2 w-5/6">
+        <div class="col-span-5">
             We received a start ping on schedule, however, your task threw an exception and reported that it had failed.
         </div>
-    </div>
-    <div class="flex w-full p-4">
-        <div class="w-16 sm:w-20 flex justify-center">
-            <div>
-                <span class="inline-flex px-2 text-xs font-semibold text-orange-800 bg-orange-100 rounded-full leading-5">Failing</span>
-            </div>
+        <div class="col-span-1 flex items-start mt-1">
+            <span class="inline-flex px-2 text-xs font-semibold text-orange-800 bg-orange-100 rounded-full leading-5">Failing</span>
         </div>
-        <div class="ml-2 w-5/6">
+        <div class="col-span-5">
             We received a start ping on schedule, however, your task has not sent the finish ping within the runtime allowance.
         </div>
     </div>
