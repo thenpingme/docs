@@ -113,3 +113,60 @@ protected function schedule(Schedule $schedule)
         );
 }
 ```
+
+<a name="output-logging"></a>
+### Output logging
+
+From version [3.2.0](https://github.com/thenpingme/thenpingme-laravel/releases/tag/3.2.0) of the client package, and on supported plans, you may enable output capturing.
+
+Of course, this is useful for monitoring the output of your scheduled tasks in general, but can be configured to capture output only on failure. When a task failure raises an alert, the output will be included with the alert notification giving you clear context surrounding the task failure.
+
+There are three options for controlling when output is stored.
+
+| Configuration Level      | Description                     |
+| :----------------------- | :------------------------------ |
+| `Thenpingme::STORE_OUTPUT` | Store all scheduled task output |
+| `Thenpingme::STORE_OUTPUT_ON_SUCCESS` | Store scheduled task output only on successful task finish or skip |
+| `Thenpingme::STORE_OUTPUT_ON_FAILURE` | Store scheduled task output only on non-zero exit code, or scheduled task failure |
+| `Thenpingme::STORE_OUTPUT_IF_PRESENT` | When used <a href="#conditional-output-logging">in combination with</a> the any of the above options, output is logged only when it is not empty |
+
+```php
+// app/Console/Kernel.php
+use Thenpingme\Thenpingme;
+
+protected function schedule(Schedule $schedule)
+{
+    $schedule
+        ->command(SomeCommandThatShouldNotBeMonitored::class)
+        ->hourly()
+        ->thenpingme(
+            output: Thenpingme::STORE_OUTPUT,
+        );
+}
+```
+
+**Note**: Whilst you may configure tasks to send output at any time, only plans that [support output logging](/#pricing) will display the output and include it in alert notifications.
+
+<a name="conditional-output-logging"></a>
+### Conditional output logging
+
+By leveraging [bitwise operations](https://www.php.net/manual/en/language.operators.bitwise.php), you may choose to log task output only when it is present. 
+
+This is useful in times when you have a known-failure scenario that produces a non-zero exit code but does not render any output. 
+
+Receiving blank task output in this scenario may lead to confusing debugging scenarios.
+
+```php
+// app/Console/Kernel.php
+use Thenpingme\Thenpingme;
+
+protected function schedule(Schedule $schedule)
+{
+    $schedule
+        ->command(CommandThatSometimesOutputs::class)
+        ->hourly()
+        ->thenpingme(
+            output: Thenpingme::STORE_OUTPUT | Thenpingme::STORE_OUTPUT_IF_PRESENT,
+        );
+}
+```
