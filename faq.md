@@ -86,6 +86,7 @@ If you have a task that only runs in production, but you ran the [`thenpingme:se
 
 Always make sure you run the `thenpingme:sync` command from the environment you are monitoring wherever possible.
 
+<a name="track-releases-with-tasks"></a>
 ## How can I track releases with my tasks?
 You can [configure](/docs/configuration) your application to send the release to us on each ping using the `thenpingme.release` key.
 

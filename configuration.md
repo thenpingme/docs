@@ -1,8 +1,9 @@
 ---
 title: Configuration
 ---
-thenping.me aims to be a zero-configuration tool for monitoring your application's scheduled tasks, however, does allow you to configure certain aspects using environment variables.
+thenping.me aims to be a zero-configuration tool for starting to monitor your application's scheduled tasks. It does, however, allow you to configure certain aspects using either [environment variables](#environment-variables) or [task-specific configuration](#task-configuration).
 
+<a name="environment-variables"></a>
 ## Environment variables
 
 ### `THENPINGME_ENABLED`
@@ -53,14 +54,14 @@ php artisan vendor:publish --tag=thenpingme-config
 
 This will publish the configuration to `config/thenpingme.php`.
 
-The most common configuration you will make in this file will be setting of the `release` value, if you would like to track your application release/version along with your pings.
+The most common configuration you will make in this file will be setting of the `release` value, if you would like to [track your application release/version](/docs/faq#track-releases-with-tasks) along with your pings.
 
+<a name="task-configuration"></a>
+## Task configuration <dl class="ml-3 mt-1.5 align-top inline-flex items-center px-3 py-1 rounded-full text-sm font-medium leading-4 bg-indigo-100 text-indigo-900 tracking-tight"><dt class="sr-only">Tailwind CSS version</dt><dd>v3.0+</dd></dl>
 
-## Task configuration
+Settings may be configured on a per-task basis directly within your scheduled task configuration in your application code.
 
-As of version [3.0.0](https://github.com/thenpingme/thenpingme-laravel/releases/tag/3.0.0) of the client package, task settings can be made configured on a per-task basis directly within your scheduled task.
-
-This allows you to have control of how your tasks are monitored right alongside where you define the task schedule.
+This puts you in control of how your tasks are monitored right alongside where you define the task schedule.
 
 ```php
 // app/Console/Kernel.php
@@ -78,9 +79,13 @@ protected function schedule(Schedule $schedule)
 }
 ```
 
-Relatedly, from version [3.1.0](https://github.com/thenpingme/thenpingme-laravel/releases/tag/3.1.0) of the client package, you may configure project-wide setting defaults.
+### Project defaults <dl class="ml-3 mt-1.5 align-top inline-flex items-center px-3 py-1 rounded-full text-sm font-medium leading-4 bg-indigo-100 text-indigo-900 tracking-tight"><dt class="sr-only">Tailwind CSS version</dt><dd>v3.1+</dd></dl>
 
-These values, when set, will be the default for all tasks in your project and take precedence over the default values used by thenping.me. Any tasks-specific settings will override the project defaults.
+Relatedly, you may also configure project-wide setting defaults directly within your application.
+
+These values, when set, will be the default for all tasks in your project and take precedence over the default values used by thenping.me.
+
+Task-specific settings will take precedence over any project defaults.
 
 ```php
 // config/thenpingme.php
@@ -98,7 +103,9 @@ return [
 ]
 ```
 
-In addition (from ^3.1), if there are any tasks you do not wish to monitor at all, you may use the `skip` configuration option. When skipped, the task will not be sent as part of the `thenpingme:setup` or `thenpingme:sync` commands, nor will it appear in the `thenpingme:schedule` or `thenpingme:verify` output.
+In addition, if there are any tasks you do not wish to monitor at all, you may use the `skip` configuration option.
+
+When skipped, the task will not be sent as part of the `thenpingme:setup` or `thenpingme:sync` commands, nor will it appear in the `thenpingme:schedule` or `thenpingme:verify` output.
 
 ```php
 // app/Console/Kernel.php
@@ -115,13 +122,19 @@ protected function schedule(Schedule $schedule)
 ```
 
 <a name="output-logging"></a>
-### Output logging
+### Output logging <dl class="ml-3 mt-1.5 align-top inline-flex items-center px-3 py-1 rounded-full text-sm font-medium leading-4 bg-indigo-100 text-indigo-900 tracking-tight"><dt class="sr-only">Tailwind CSS version</dt><dd>v3.2+</dd></dl>
 
-From version [3.2.0](https://github.com/thenpingme/thenpingme-laravel/releases/tag/3.2.0) of the client package, and on supported plans, you may enable output capturing.
+<div class="p-4 shadow sm:rounded-md bg-blue-50">
+    <span class="text-md text-blue-700">
+        <b>Note</b>: Output logging may only be configured in your application's task schedule as command output is pushed to thenping.me.
+    </span>
+</div>
 
-Of course, this is useful for monitoring the output of your scheduled tasks in general, but can be configured to capture output only on failure. When a task failure raises an alert, the output will be included with the alert notification giving you clear context surrounding the task failure.
+On [supported plans](https://thenping.me/#pricing), you may enable output logging on a per-task basis.
 
-There are three options for controlling when output is stored.
+Of course, this is useful for monitoring the output of your scheduled tasks in general, but can be configured to capture output only on failure. 
+
+When a task failure raises an alert, the output will be included with the alert notification giving you clear context surrounding the task failure.
 
 | Configuration Level      | Description                     |
 | :----------------------- | :------------------------------ |
@@ -148,7 +161,7 @@ protected function schedule(Schedule $schedule)
 **Note**: Whilst you may configure tasks to send output at any time, only plans that [support output logging](/#pricing) will display the output and include it in alert notifications.
 
 <a name="conditional-output-logging"></a>
-### Conditional output logging
+### Conditional output logging <dl class="ml-3 mt-1.5 align-top inline-flex items-center px-3 py-1 rounded-full text-sm font-medium leading-4 bg-indigo-100 text-indigo-900 tracking-tight"><dt class="sr-only">Tailwind CSS version</dt><dd>v3.2+</dd></dl>
 
 By leveraging [bitwise operations](https://www.php.net/manual/en/language.operators.bitwise.php), you may choose to log task output only when it is present. 
 
