@@ -29,7 +29,13 @@ That is to say, if you have tasks constrained to only run in production environm
 
 **Note**: This command will always run in sync, so you receive immediate feedback if your tasks fail to sync for any reason.
 
-## `thenpingme:schedule`
+## `thenpingme:schedule` <dl class="ml-3 mt-1.5 align-top inline-flex items-center px-3 py-1 rounded-full text-sm font-medium leading-4 bg-indigo-100 text-indigo-900 tracking-tight"><dt class="sr-only">Tailwind CSS version</dt><dd>< v3.2</dd></dl>
+
+<div class="p-4 shadow sm:rounded-md bg-blue-50">
+    <span class="text-md text-blue-700">
+        <b>Note</b>: With the introduction of the new <code>artisan schedule:list</code> command in Laravel 9.x, the functionality provided by this package has been deprecated and will be removed in a later version.
+    </span>
+</div>
 
 The `schedule` command is useful to get a quick overview of all of your application's scheduled tasks, their interval, expected previous and next runs.
 
