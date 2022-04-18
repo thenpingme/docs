@@ -14,6 +14,8 @@ This command will also create a random signing key and add it to your `.env` fil
 Once setup is complete, you will receive an email to verify that your application's tasks are ready to be monitored. Each of your tasks will remain in a pending state until they are triggered by your scheduler for the first time.
 
 > Any tasks that are defined using the `environments()` constraint will only be detected in that environment.
+>
+> Any tasks that have been [configured](/docs/configuration#skipping-tasks) to be skipped will not be sent as part of the setup task payload.
 
 ## `thenpingme:sync`
 
@@ -27,7 +29,9 @@ In order for all relevant tasks to be monitored, this command should be run in t
 
 That is to say, if you have tasks constrained to only run in production environments &ndash; `environments(['production'])` &ndash; you should run `thenpingme:sync` *in* the production environment.
 
-**Note**: This command will always run in sync, so you receive immediate feedback if your tasks fail to sync for any reason.
+> **Note**: This command will always run in sync, so you receive immediate feedback if your tasks fail to sync for any reason.
+>
+> Any tasks that have been [configured](/docs/configuration#skipping-tasks) to be skipped will not be sent as part of the sync task payload. Tasks that were previously monitored will be removed from thenping.me.
 
 ## `thenpingme:schedule` <dl class="ml-3 mt-1.5 align-top inline-flex items-center px-3 py-1 rounded-full text-sm font-medium leading-4 bg-indigo-100 text-indigo-900 tracking-tight"><dt class="sr-only">Tailwind CSS version</dt><dd>< v3.2</dd></dl>
 

@@ -103,7 +103,10 @@ return [
 ]
 ```
 
-In addition, if there are any tasks you do not wish to monitor at all, you may use the `skip` configuration option.
+<a name="skipping-tasks"></a>
+### Skipping tasks <dl class="ml-3 mt-1.5 align-top inline-flex items-center px-3 py-1 rounded-full text-sm font-medium leading-4 bg-indigo-100 text-indigo-900 tracking-tight"><dt class="sr-only">Tailwind CSS version</dt><dd>v3.1+</dd></dl>
+
+If there are any tasks you do not wish to monitor at all, you may use the `skip` configuration option.
 
 When skipped, the task will not be sent as part of the `thenpingme:setup` or `thenpingme:sync` commands, nor will it appear in the `thenpingme:schedule` or `thenpingme:verify` output.
 
