@@ -42,7 +42,7 @@ In addition, we capture:
 The thenping.me package is open source and available on [GitHub](https://github.com/thenpingme/thenpingme-laravel).
 
 ## My error tracker didn't notify me of failure, why is my task missing?
-Without monitoring, it's difficult to tell why this might be the case, though. Laravel's task scheduler runs each configured task asyncrhonously; that is to say that each task must finish before the next one begins.
+Without monitoring, it's difficult to tell why this might be the case, though. Laravel's task scheduler runs each configured task asynchronously; that is to say that each task must finish before the next one begins.
 
 If you have two tasks scheduled to run hourly, both will fall into the same scheduled time slot and will be queued to run one after the other.
 
