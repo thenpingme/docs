@@ -32,9 +32,19 @@ This will configure a signing secret for your application and add it to your `.e
 
 ```env
 THENPINGME_PROJECT_ID=<your-project-id>
-THENPINGME_SIGNING_SECRET=<a-very-long-signing-secret-key>
+THENPINGME_SIGNING_KEY=<a-very-long-signing-secret-key>
 THENGPINGME_QUEUE_PING=true
 ```
+
+## Laravel Vapor
+
+Due to the way that Laravel Vapor applications are deployed, we recommend that you run the setup step from your local environment first. This will generate your signing key and push up your scheduled tasks to thenping.me.
+
+Once this step is complete, you'll need to create a `THENPINGME_PROJECT_ID` and `THENPINGME_SIGNING_KEY` for your environment, using the corresponding values that were added to your local `.env` file. 
+
+Remember to re-deploy your Vapor application after adding the secrets so that they are injected into your environment.
+
+After the deployment is complete, your tasks will be able to successfully send their pings to thenping.me.
 
 ## Unique tasks
 
